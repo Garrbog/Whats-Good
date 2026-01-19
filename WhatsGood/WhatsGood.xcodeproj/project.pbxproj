@@ -6,8 +6,21 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		352491C82F1ED672002604AC /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352491C72F1ED672002604AC /* MainTabView.swift */; };
+		352491CA2F1ED681002604AC /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352491C92F1ED681002604AC /* FeedView.swift */; };
+		352491CC2F1ED68F002604AC /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352491CB2F1ED68F002604AC /* MapView.swift */; };
+		352491CE2F1ED69D002604AC /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352491CD2F1ED69D002604AC /* ReviewView.swift */; };
+		352491D02F1ED6A9002604AC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352491CF2F1ED6A9002604AC /* ProfileView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		352491AC2F1ECD24002604AC /* WhatsGood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsGood.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		352491C72F1ED672002604AC /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		352491C92F1ED681002604AC /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		352491CB2F1ED68F002604AC /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		352491CD2F1ED69D002604AC /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		352491CF2F1ED6A9002604AC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +45,11 @@
 		352491A32F1ECD24002604AC = {
 			isa = PBXGroup;
 			children = (
-				352491AE2F1ECD24002604AC /* WhatsGood */,
+				352491C52F1ED59D002604AC /* Components */,
+				352491C42F1ED594002604AC /* Services */,
+				352491C32F1ED58D002604AC /* Models */,
+				352491C22F1ED584002604AC /* Views */,
+				352491C12F1ED57A002604AC /* App */,
 				352491AD2F1ECD24002604AC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +60,47 @@
 				352491AC2F1ECD24002604AC /* WhatsGood.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		352491C12F1ED57A002604AC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				352491AE2F1ECD24002604AC /* WhatsGood */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		352491C22F1ED584002604AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				352491C72F1ED672002604AC /* MainTabView.swift */,
+				352491C92F1ED681002604AC /* FeedView.swift */,
+				352491CB2F1ED68F002604AC /* MapView.swift */,
+				352491CD2F1ED69D002604AC /* ReviewView.swift */,
+				352491CF2F1ED6A9002604AC /* ProfileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		352491C32F1ED58D002604AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		352491C42F1ED594002604AC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		352491C52F1ED59D002604AC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				352491CA2F1ED681002604AC /* FeedView.swift in Sources */,
+				352491CC2F1ED68F002604AC /* MapView.swift in Sources */,
+				352491CE2F1ED69D002604AC /* ReviewView.swift in Sources */,
+				352491D02F1ED6A9002604AC /* ProfileView.swift in Sources */,
+				352491C82F1ED672002604AC /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
