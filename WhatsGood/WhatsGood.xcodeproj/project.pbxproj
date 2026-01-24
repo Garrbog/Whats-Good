@@ -19,6 +19,7 @@
 		353335862F247C21002DE50B /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353335852F247C21002DE50B /* Review.swift */; };
 		353335882F247C33002DE50B /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353335872F247C33002DE50B /* Place.swift */; };
 		3533358A2F248162002DE50B /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353335892F248162002DE50B /* MockData.swift */; };
+		3533358C2F2490AF002DE50B /* ReviewCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3533358B2F2490AF002DE50B /* ReviewCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		353335852F247C21002DE50B /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		353335872F247C33002DE50B /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		353335892F248162002DE50B /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		3533358B2F2490AF002DE50B /* ReviewCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -120,6 +122,7 @@
 		352491C52F1ED59D002604AC /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				3533358B2F2490AF002DE50B /* ReviewCardView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				352491D02F1ED6A9002604AC /* ProfileView.swift in Sources */,
 				353335842F247BE9002DE50B /* User.swift in Sources */,
 				352491C82F1ED672002604AC /* MainTabView.swift in Sources */,
+				3533358C2F2490AF002DE50B /* ReviewCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

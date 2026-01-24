@@ -8,13 +8,32 @@
 import SwiftUI
 
 struct FeedView: View {
+    private let mock = MockDataService.shared
+
     var body: some View {
         NavigationStack {
-            Text("Feed")
-                .navigationTitle("Feed")
+            List {
+                ForEach(mock.reviews) { review in
+                    if
+                        let user = mock.user(for: review.userId),
+                        let place = mock.place(for: review.placeId)
+                    {
+                        ReviewCard(
+                            review: review,
+                            user: user,
+                            place: place
+                        )
+                        .listRowSeparator(.hidden)
+                        .listRowBackground(Color.clear)
+                    }
+                }
+            }
+            .listStyle(.plain)
+            .navigationTitle("Feed")
         }
     }
 }
 
-#Preview { FeedView() }
-
+#Preview {
+    FeedView()
+}
