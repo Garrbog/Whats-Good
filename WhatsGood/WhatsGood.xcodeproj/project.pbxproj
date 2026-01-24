@@ -15,6 +15,10 @@
 		352491D22F1EF902002604AC /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352491D12F1EF902002604AC /* AppState.swift */; };
 		352491D42F1EFB97002604AC /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352491D32F1EFB97002604AC /* AppRootView.swift */; };
 		352491D62F1EFBBD002604AC /* LoggedOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352491D52F1EFBBD002604AC /* LoggedOutView.swift */; };
+		353335842F247BE9002DE50B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353335832F247BE9002DE50B /* User.swift */; };
+		353335862F247C21002DE50B /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353335852F247C21002DE50B /* Review.swift */; };
+		353335882F247C33002DE50B /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353335872F247C33002DE50B /* Place.swift */; };
+		3533358A2F248162002DE50B /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353335892F248162002DE50B /* MockData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		352491D12F1EF902002604AC /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		352491D32F1EFB97002604AC /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
 		352491D52F1EFBBD002604AC /* LoggedOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutView.swift; sourceTree = "<group>"; };
+		353335832F247BE9002DE50B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		353335852F247C21002DE50B /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		353335872F247C33002DE50B /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		353335892F248162002DE50B /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -93,6 +101,9 @@
 		352491C32F1ED58D002604AC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				353335832F247BE9002DE50B /* User.swift */,
+				353335852F247C21002DE50B /* Review.swift */,
+				353335872F247C33002DE50B /* Place.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -101,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				352491D12F1EF902002604AC /* AppState.swift */,
+				353335892F248162002DE50B /* MockData.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -187,12 +199,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				352491CA2F1ED681002604AC /* FeedView.swift in Sources */,
+				353335882F247C33002DE50B /* Place.swift in Sources */,
 				352491D42F1EFB97002604AC /* AppRootView.swift in Sources */,
 				352491CC2F1ED68F002604AC /* MapView.swift in Sources */,
 				352491D22F1EF902002604AC /* AppState.swift in Sources */,
+				3533358A2F248162002DE50B /* MockData.swift in Sources */,
+				353335862F247C21002DE50B /* Review.swift in Sources */,
 				352491CE2F1ED69D002604AC /* ReviewView.swift in Sources */,
 				352491D62F1EFBBD002604AC /* LoggedOutView.swift in Sources */,
 				352491D02F1ED6A9002604AC /* ProfileView.swift in Sources */,
+				353335842F247BE9002DE50B /* User.swift in Sources */,
 				352491C82F1ED672002604AC /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
