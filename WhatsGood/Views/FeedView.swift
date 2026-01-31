@@ -18,11 +18,12 @@ struct FeedView: View {
                         let user = mock.user(for: review.userId),
                         let place = mock.place(for: review.placeId)
                     {
-                        ReviewCard(
-                            review: review,
-                            user: user,
-                            place: place
-                        )
+                        NavigationLink {
+                            PlaceDetailView(place: place)
+                        } label: {
+                            ReviewCard(review: review, user: user, place: place)
+                        }
+                        .buttonStyle(.plain)             // keeps it looking like a card
                         .listRowSeparator(.hidden)
                         .listRowBackground(Color.clear)
                     }

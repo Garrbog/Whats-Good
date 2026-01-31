@@ -33,7 +33,7 @@ final class MockDataService {
             latitude: 41.7355,
             longitude: -111.8344,
             address: "1300 N Main St",
-            summary: "Fast casual Mexican food with big portions.",
+            summary: "gwow, super bien.",
             category: "Mexican",
             priceLevel: 2,
             imageName: "fork.knife"
@@ -48,7 +48,7 @@ final class MockDataService {
             latitude: 41.7362,
             longitude: -111.8336,
             address: nil,
-            summary: "Local favorite for breakfast and comfort food.",
+            summary: "itsa veryyyy agood place",
             category: "Restaurant",
             priceLevel: 2,
             imageName: "cup.and.saucer"
@@ -60,20 +60,20 @@ final class MockDataService {
         // Users
         let will = User(
             id: UUID(),
-            firstName: "Will",
+            firstName: "Talon",
             lastName: "Ford",
-            username: "willf",
+            username: "loserGuy",
             avatarSystemName: "person.circle.fill",
             favoriteRestaurantId: cafeRio.id
         )
 
         let emma = User(
             id: UUID(),
-            firstName: "Emma",
+            firstName: "Ginger",
             lastName: "Ford",
-            username: "emmaf",
+            username: "ginny",
             avatarSystemName: "person.crop.circle",
-            favoriteRestaurantId: nil   // <-- required case
+            favoriteRestaurantId: nil
         )
 
         self.users = [will, emma]
@@ -84,7 +84,7 @@ final class MockDataService {
                 id: UUID(),
                 userId: will.id,
                 placeId: cafeRio.id,
-                text: "Huge portions, always hits after a long day.",
+                text: "gwow, super bien.",
                 rating: 4.5,
                 date: Date().addingTimeInterval(-86400)
             ),

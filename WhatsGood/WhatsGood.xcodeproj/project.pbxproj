@@ -20,6 +20,7 @@
 		353335882F247C33002DE50B /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353335872F247C33002DE50B /* Place.swift */; };
 		3533358A2F248162002DE50B /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353335892F248162002DE50B /* MockData.swift */; };
 		3533358C2F2490AF002DE50B /* ReviewCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3533358B2F2490AF002DE50B /* ReviewCardView.swift */; };
+		3533358E2F2496DF002DE50B /* PlaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3533358D2F2496DF002DE50B /* PlaceDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		353335872F247C33002DE50B /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		353335892F248162002DE50B /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		3533358B2F2490AF002DE50B /* ReviewCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCardView.swift; sourceTree = "<group>"; };
+		3533358D2F2496DF002DE50B /* PlaceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -96,6 +98,7 @@
 				352491CF2F1ED6A9002604AC /* ProfileView.swift */,
 				352491D32F1EFB97002604AC /* AppRootView.swift */,
 				352491D52F1EFBBD002604AC /* LoggedOutView.swift */,
+				3533358D2F2496DF002DE50B /* PlaceDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				352491CA2F1ED681002604AC /* FeedView.swift in Sources */,
 				353335882F247C33002DE50B /* Place.swift in Sources */,
 				352491D42F1EFB97002604AC /* AppRootView.swift in Sources */,
+				3533358E2F2496DF002DE50B /* PlaceDetailView.swift in Sources */,
 				352491CC2F1ED68F002604AC /* MapView.swift in Sources */,
 				352491D22F1EF902002604AC /* AppState.swift in Sources */,
 				3533358A2F248162002DE50B /* MockData.swift in Sources */,
