@@ -1,5 +1,5 @@
 //
-//  SwiftUIView.swift
+//  ReviewCardView.swift
 //  WhatsGood
 //
 //  Created by William Garrett Ford on 1/23/26.
@@ -21,13 +21,23 @@ struct ReviewCard: View {
                     .font(.system(size: 34))
                 
                 VStack(alignment: .leading, spacing: 2) {
-                    Text(user.fullName)
-                        .font(.headline)
-                    
-                    Text(place.name)
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                    
+                    NavigationLink {
+                        ProfileView()
+                    } label: {
+                        Text(user.fullName)
+                            .font(.headline)
+                    }
+                    .buttonStyle(.plain)
+
+                    NavigationLink {
+                        PlaceDetailView(place: place)
+                    } label: {
+                        Text(place.name)
+                            .font(.subheadline)
+                            .foregroundStyle(.secondary)
+                    }
+                    .buttonStyle(.plain)
+
                 }
                 
                 Spacer()

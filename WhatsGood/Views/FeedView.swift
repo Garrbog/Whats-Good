@@ -18,14 +18,9 @@ struct FeedView: View {
                         let user = mock.user(for: review.userId),
                         let place = mock.place(for: review.placeId)
                     {
-                        NavigationLink {
-                            PlaceDetailView(place: place)
-                        } label: {
-                            ReviewCard(review: review, user: user, place: place)
-                        }
-                        .buttonStyle(.plain)             // keeps it looking like a card
-                        .listRowSeparator(.hidden)
-                        .listRowBackground(Color.clear)
+                        ReviewCard(review: review, user: user, place: place)
+                            .listRowSeparator(.hidden)
+                            .listRowBackground(Color.clear)
                     }
                 }
             }
