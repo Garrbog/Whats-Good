@@ -19,7 +19,7 @@ struct MainTabView: View {
             ReviewView()
                 .tabItem { Label("Reveiw", systemImage: "star")}
             
-            ProfileView()
+            ProfileView(user: MockDataService.shared.users[0])
                 .tabItem { Label("Profile", systemImage: "person")}
         }
     }

@@ -26,7 +26,13 @@ struct PlaceDetailView: View {
             Section("Reviews") {
                 ForEach(reviewsForPlace) { review in
                     if let user = mock.user(for: review.userId) {
-                        ReviewCard(review: review, user: user, place: place)
+                        ReviewCard(
+                            review: review,
+                            user: user,
+                            place: place,
+                            onUserTap: {},
+                            onPlaceTap: {}
+                        )
                             .listRowSeparator(.hidden)
                             .listRowBackground(Color.clear)
                     }

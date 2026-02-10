@@ -11,37 +11,34 @@ struct ReviewCard: View {
     let review: Review
     let user: User
     let place: Place
+    let onUserTap: () -> Void
+    let onPlaceTap:() -> Void
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             
-            //Top Row: Avatar + name + place
+            // Top Row: Avatar + username (tappable) + place (tappable)
             HStack(alignment: .center, spacing: 10) {
-                Image(systemName: user.avatarSystemName)
-                    .font(.system(size: 34))
-                
-                VStack(alignment: .leading, spacing: 2) {
-                    NavigationLink {
-                        ProfileView()
-                    } label: {
-                        Text(user.fullName)
-                            .font(.headline)
+                Button(action: onUserTap) {
+                        HStack(spacing: 10) {
+                            Image(systemName: user.avatarSystemName)
+                                .font(.system(size: 34))
+
+                            Text(user.fullName)
+                                .font(.headline)
+                        }
                     }
                     .buttonStyle(.plain)
 
-                    NavigationLink {
-                        PlaceDetailView(place: place)
-                    } label: {
+                    Button(action: onPlaceTap) {
                         Text(place.name)
                             .font(.subheadline)
                             .foregroundStyle(.secondary)
                     }
                     .buttonStyle(.plain)
 
+                    Spacer()
                 }
-                
-                Spacer()
-            }
             
             // Stars + date
             HStack(spacing: 8) {
@@ -101,7 +98,7 @@ private struct StarRatingView: View {
         priceLevel: 2,
         imageName: "cup.and.saucer"
     )
-
+    
     let user = User(
         id: UUID(),
         firstName: "Will",
@@ -110,7 +107,7 @@ private struct StarRatingView: View {
         avatarSystemName: "person.circle.fill",
         favoriteRestaurantId: nil
     )
-
+    
     let review = Review(
         id: UUID(),
         userId: user.id,
@@ -119,7 +116,13 @@ private struct StarRatingView: View {
         rating: 4.5,
         date: Date()
     )
-
-    return ReviewCard(review: review, user: user, place: place)
-        .padding()
+    
+    ReviewCard(
+        review: review,
+        user: user,
+        place: place,
+        onUserTap: {},
+        onPlaceTap: {}
+    )
+    .padding()
 }
