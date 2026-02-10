@@ -15,4 +15,7 @@ struct Review: Identifiable {
     let text: String
     let rating: Double
     let date: Date
+    
+    var likedByUserIds: Set<UUID>
+    var commentCount: Int
 }

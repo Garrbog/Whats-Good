@@ -21,6 +21,7 @@
 		3533358A2F248162002DE50B /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353335892F248162002DE50B /* MockData.swift */; };
 		3533358C2F2490AF002DE50B /* ReviewCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3533358B2F2490AF002DE50B /* ReviewCardView.swift */; };
 		3533358E2F2496DF002DE50B /* PlaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3533358D2F2496DF002DE50B /* PlaceDetailView.swift */; };
+		359CA19E2F3B1BCC00DA7DE7 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359CA19D2F3B1BCC00DA7DE7 /* Comment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		353335892F248162002DE50B /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		3533358B2F2490AF002DE50B /* ReviewCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCardView.swift; sourceTree = "<group>"; };
 		3533358D2F2496DF002DE50B /* PlaceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailView.swift; sourceTree = "<group>"; };
+		359CA19D2F3B1BCC00DA7DE7 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -109,6 +111,7 @@
 				353335832F247BE9002DE50B /* User.swift */,
 				353335852F247C21002DE50B /* Review.swift */,
 				353335872F247C33002DE50B /* Place.swift */,
+				359CA19D2F3B1BCC00DA7DE7 /* Comment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				352491D42F1EFB97002604AC /* AppRootView.swift in Sources */,
 				3533358E2F2496DF002DE50B /* PlaceDetailView.swift in Sources */,
 				352491CC2F1ED68F002604AC /* MapView.swift in Sources */,
+				359CA19E2F3B1BCC00DA7DE7 /* Comment.swift in Sources */,
 				352491D22F1EF902002604AC /* AppState.swift in Sources */,
 				3533358A2F248162002DE50B /* MockData.swift in Sources */,
 				353335862F247C21002DE50B /* Review.swift in Sources */,

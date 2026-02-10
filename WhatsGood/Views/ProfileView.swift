@@ -33,16 +33,20 @@ struct ProfileView: View {
                 }
                 .padding(.vertical, 6)
 
-                if let favId = user.favoriteRestaurantId,
-                   let favPlace = mock.place(for: favId) {
-                    Text("Favorite: \(favPlace.name)")
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                } else {
-                    Text("Favorite: —")
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
+                VStack(alignment: .leading, spacing: 4) {
+
+                    if let topRestaurantId = user.topRestaurantId,
+                       let place = mock.place(for: topRestaurantId) {
+                        Text("Top restaurant: \(place.name)")
+                    } else {
+                        Text("Top restaurant: —")
+                    }
+
+                    Text("Top dish: \(user.topDish ?? "—")")
+                    Text("Top drink: \(user.topDrink ?? "—")")
                 }
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
             }
 
             Section("Reviews") {

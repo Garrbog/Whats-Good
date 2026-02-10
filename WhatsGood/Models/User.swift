@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  User.swift
 //  WhatsGood
 //
 //  Created by William Garrett Ford on 1/23/26.
@@ -13,7 +13,16 @@ struct User: Identifiable {
     let username: String
     let avatarSystemName: String
 
-    let favoriteRestaurantId: UUID?
+    let location: String? // "Logan, UT"
+    let bio: String?
+    
+    let topRestaurantId: UUID?
+    let topDish: String?
+    let topDrink: String?
+    
+    let restaurantsVisitedCount: Int
+    let followerIds: [UUID]
+    let followingIds: [UUID]
 
     var fullName: String { "\(firstName) \(lastName)" }
 }

@@ -14,6 +14,8 @@ struct ReviewCard: View {
     let onUserTap: () -> Void
     let onPlaceTap:() -> Void
     
+    private var likeCount: Int { review.likedByUserIds.count }
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             
@@ -54,11 +56,30 @@ struct ReviewCard: View {
                 .font(.body)
                 .foregroundStyle(.primary)
                 .fixedSize(horizontal: false, vertical: true)
+            
+            HStack(spacing: 16) {
+                HStack(spacing: 6) {
+                    Image(systemName: "heart")
+                    Text("\(likeCount)")
+                }
+
+                HStack(spacing: 6) {
+                    Image(systemName: "bubble.right")
+                    Text("\(review.commentCount)")
+                }
+
+                Spacer()
+            }
+            .font(.caption)
+            .foregroundStyle(.secondary)
+            .padding(.top, 4)
+
         }
         .padding(12)
         .background(.thinMaterial)
         .clipShape(RoundedRectangle(cornerRadius: 16))
     }
+    
 }
 
 private struct StarRatingView: View {
@@ -105,8 +126,16 @@ private struct StarRatingView: View {
         lastName: "Ford",
         username: "willf",
         avatarSystemName: "person.circle.fill",
-        favoriteRestaurantId: nil
+        location: "Logan, UT",
+        bio: "Loves tacos.",
+        topRestaurantId: place.id,
+        topDish: "Sweet pork burrito",
+        topDrink: "Horchata",
+        restaurantsVisitedCount: 12,
+        followerIds: [],
+        followingIds: []
     )
+
     
     let review = Review(
         id: UUID(),
@@ -114,8 +143,11 @@ private struct StarRatingView: View {
         placeId: place.id,
         text: "So good. Would 100% come back.",
         rating: 4.5,
-        date: Date()
+        date: Date(),
+        likedByUserIds: [],
+        commentCount: 0
     )
+
     
     ReviewCard(
         review: review,
